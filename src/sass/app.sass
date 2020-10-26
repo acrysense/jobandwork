@@ -1,0 +1,518 @@
+@import "config" // Always at the beginning
+@import "header"
+@import "breadcrumb"
+@import "footer"
+
+// MAIN SCREEN
+.main
+    position: relative
+    min-height: 100vh
+
+.offer
+    margin-top: 75px
+    &__title
+        max-width: 635px
+        font-size: 40px
+        font-weight: 600
+        line-height: 60px
+        span
+            font-weight: normal
+    &__description
+        margin-top: 42px
+        font-size: 20px
+        font-weight: 300
+        line-height: 32px
+    &__btn
+        margin-top: 60px
+
+.tag
+    position: absolute
+    bottom: 12px
+    font-size: 16px
+    font-weight: 600
+    line-height: 30px
+    &::before
+        content: ''
+        display: inline-block
+        margin-right: 10px
+        width: 1px
+        height: 30px
+        vertical-align: middle
+        background: $blue-color
+
+// ADVANTAGES
+.advantages
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__head
+        position: relative
+        max-width: 292px
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            top: -61px
+            right: 0
+            z-index: -1
+            width: 227px
+            height: 221px
+            background-image: url(../img/dist/sprite.svg#big-star)
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+    
+.card
+    display: flex
+    align-items: stretch
+    flex-wrap: wrap
+    height: 100%
+    &__item
+        position: relative
+        padding: 48px 14px 12px
+        max-width: 292px
+        width: 100%
+        background: #F9F9F9
+        box-shadow: 0 4px 15px rgba(#000, 0.12)
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            top: -10px
+            right: -10px
+            z-index: -1
+            width: 100%
+            height: 100%
+            background: #C7DDF6
+    &__title
+        font-size: 26px
+        font-weight: normal
+        line-height: 43px
+    &__description
+        margin-top: 20px
+        margin-bottom: 72px
+        font-size: 18px
+        font-weight: normal
+        line-height: 28px
+    &__btn
+        position: absolute
+        right: 14px
+        bottom: 12px
+        font-size: 14px
+        font-weight: 600
+        color: $blue-color
+        &:hover
+            color: $blue-color
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: -24px
+            right: 0
+            width: 200px
+            height: 1px
+            background: $blue-color
+
+// NEWS
+.articles
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+    &__item
+        display: flex
+        flex-direction: column
+        flex-basis: auto
+        margin: 0 12px 24px
+    &__item ~ .articles__delimiter
+        margin-top: 16px
+    &__head
+        width: 100%
+        height: 271px
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+    &__head--profession
+        height: 381px
+    &__tag
+        padding: 15px 26px
+        font-size: 14px
+        font-weight: 600
+        color: $blue-color
+        background: $white-color
+        &::before
+            content: ''
+            display: inline-block
+            margin-right: 5px
+            width: 1px
+            height: 12px
+            vertical-align: middle
+            background: $blue-color
+    &__body
+        display: flex
+        flex: 1
+        flex-direction: column
+        padding: 12px 20px 20px
+        background: $white-color
+        box-shadow: 0 4px 15px rgba(#000, 0.12)
+    &__title
+        flex: 1
+        font-size: 16px
+        font-weight: 600
+        line-height: 30px
+    &__footer
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        margin-top: 18px
+    &__user
+        display: flex
+        align-items: center
+    &__ava
+        overflow: hidden
+        margin-right: 10px
+        max-width: 58px
+        max-height: 55px
+        width: 100%
+        height: 100%
+    &__img
+        min-width: 58px
+        min-height: 55px
+        width: 100%
+        height: 100%
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+    &__name,
+    &__date
+        font-size: 12px
+        line-height: 32px
+    &__more
+        font-size: 14px
+        font-weight: 600
+        color: $blue-color
+    &__delimiter
+        width: 100%
+        height: 80px
+        background: #EBEBEB
+    &__delimiter ~ .articles__item
+        margin-top: 40px
+
+// HOW IT WORKS
+.stages
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: stretch
+        margin-top: 120px
+        height: 100%
+        counter-reset: counter
+    &__item
+        max-width: 248px
+    &__head
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        position: relative
+        min-height: 250px
+        &::before
+            position: absolute
+            top: -50%
+            left: 0
+            z-index: -1
+            transform: translateY(50px)
+            font-size: 300px
+            font-weight: 800
+            line-height: 100%
+            counter-increment: counter
+            content: counter(counter)
+            color: transparent
+            background-clip: text
+            background-image: linear-gradient(to top, rgba(#fff, 1), rgba(#ebebeb, 1))
+    &__description
+        overflow: hidden
+        margin-top: 25px
+        max-height: 90px
+        font-size: 16px
+        font-weight: 600
+        line-height: 30px
+
+// BLOG
+.blog
+    &__title
+        margin-top: 52px
+        font-size: 26px
+        font-weight: normal
+        line-height: 43px
+    &__tag
+        position: relative
+        margin-top: 24px
+        padding-left: 10px
+        font-size: 20px
+        font-weight: 300
+        line-height: 32px
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            display: inline-block
+            width: 1px
+            height: 30px
+            vertical-align: middle
+            background: $blue-color
+
+// FILTER
+.filter
+    display: flex
+    align-items: center
+    &__item
+        font-size: 14px
+        font-weight: 600
+        color: $blue-color
+        cursor: pointer
+        &::before
+            content: ''
+            display: inline-block
+            margin-right: 5px
+            width: 1px
+            height: 20px
+            vertical-align: middle
+            background: $blue-color
+        &.active
+            font-weight: 800
+            color: $blue-hover-color
+    &__item + &__item
+        margin-left: 33px
+
+// MEDIA QUARIES
+@media (min-width: 1440px)
+    .articles
+        &__wrapper
+            margin: 0 -12px
+        &__item--big
+            max-width: 608px
+            width: 100%
+        &__item--small
+            max-width: 397px
+            width: 100%
+    .card
+        &--all
+            .card__item
+                margin-bottom: 56px
+            .card__item:nth-child(3)
+                margin-right: 292px
+        &__item:not(:nth-child(7n))
+            margin-right: 24px
+    .stages
+        &__head
+            img
+                margin-right: -40px
+
+@media (max-width: 1439px)
+    .articles
+        &__delimiter
+            margin: 0 12px
+            width: calc(100% - 24px)
+    .advantages
+        &__head
+            margin-bottom: 80px
+        &__wrapper
+            align-items: flex-start
+            flex-direction: column
+
+@media (min-width: 1200px) and (max-width: 1439px)
+    .articles
+        margin: 0 -12px
+        &__item--big
+            margin-right: 1%
+            margin-left: 1%
+            max-width: 100%
+            width: 48%
+        &__item--small
+            margin-right: 1.16666667%
+            margin-left: 1.16666667%
+            max-width: 100%
+            width: 31%
+        &__delimiter
+            margin: 0 12px
+            width: calc(100% - 24px)
+    .card
+        &--all
+            .card__item
+                margin-bottom: 56px
+            .card__item:nth-child(3)
+                margin-right: 22%
+        &__item
+            max-width: 22%
+        &__item:not(:nth-child(7n))
+            margin-right: 4%
+
+@media (min-width: 1200px)
+    .blog
+        &__title
+            margin-bottom: 42px
+
+@media (max-width: 1199px)
+    .articles
+        &__wrapper:not(.articles__wrapper--slider),
+        &__delimiter--double
+            display: none
+    .blog
+        &__title
+            margin-bottom: 36px
+        &__tag
+            margin-top: 48px
+
+@media (min-width: 992px) and (max-width: 1199px)
+    .card
+        &--all
+            .card__item
+                margin-bottom: 60px
+        &__item
+            max-width: 30%
+            &:nth-child(3n),
+            &:nth-child(3n - 1)
+                margin-left: 3.33333333%
+
+@media (min-width: 768px) and (max-width: 1199px)
+    .articles
+        &__body
+            min-height: 204px
+            max-height: 204px
+        &__title
+            overflow: hidden
+            max-height: 90px
+    .stages
+        &__wrapper
+            flex-wrap: wrap
+        &__item
+            margin: 0 7% 80px
+            max-width: 36%
+
+@media (min-width: 768px) and (max-width: 991px)
+    .card
+        &__item
+            margin-bottom: 56px
+            max-width: 44%
+            &:nth-child(2n),
+                margin-left: 6%
+
+@media (min-width: 768px)
+    .filter
+        margin-bottom: 42px
+
+@media (max-width: 767px)
+    .offer
+        &__title
+            max-width: 316px
+            font-size: 30px
+            line-height: 40px
+            span
+                font-size: 20px
+                line-height: 34px
+        &__description
+            max-width: 253px
+            font-size: 14px
+            font-weight: 300
+            line-height: 20px
+    .articles
+        &__item
+            margin: 12px
+        &__item--big,
+        &__item--small
+            max-width: 100%
+    .stages
+        &__wrapper
+            flex-direction: column
+        &__item
+            position: relative
+            margin-right: auto
+            margin-left: auto
+            max-width: 50%
+            &:nth-child(odd)::before
+                content: ''
+                display: block
+                position: absolute
+                top: 55%
+                left: -75.5px
+                width: 45.5px
+                height: 389px
+                background-image: url(../img/dist/sprite.svg#left-down-arrow)
+                background-repeat: no-repeat
+                background-size: cover
+                background-position: center
+            &:nth-child(2)::before
+                content: ''
+                display: block
+                position: absolute
+                top: 55%
+                right: -75.5px
+                width: 45.5px
+                height: 389px
+                background-image: url(../img/dist/sprite.svg#right-down-arrow)
+                background-repeat: no-repeat
+                background-size: cover
+                background-position: center
+        &__item + &__item
+            margin-top: 160px
+    .card
+        &__item
+            margin: 0 auto 56px
+            max-width: 90%
+    .filter
+        flex-wrap: wrap
+        &__item
+            margin-right: 33px
+            margin-bottom: 24px
+        &__item + &__item
+            margin-left: 0
+
+@media (min-width: 576px) and (max-width: 991px)
+    .blog
+        &__tag
+            &::before
+                height: 60px
+
+@media (min-width: 576px) and (max-width: 767px)
+    .articles
+        &__body
+            min-height: 174px
+            max-height: 174px
+        &__title
+            overflow: hidden
+            max-height: 60px
+
+@media (max-width: 575px)
+    .articles
+        &__body
+            justify-content: space-between
+            min-height: 241px
+            max-height: 241px
+        &__title
+            overflow: hidden
+            max-height: 90px
+        &__delimiter
+            height: 40px
+    .stages
+        &__item
+            max-width: 75%
+            &:nth-child(odd)::before
+                left: -45.5px
+            &:nth-child(2)::before
+                right: -50.5px
+    .blog
+        &__tag
+            font-size: 14px
+            font-weight: 300
+            line-height: 20px
+            &::before
+                height: 35px
+
+@media (max-width: 379px)
+    .articles
+        &__footer
+            align-items: flex-start
+            flex-direction: column
+        &__more
+            margin-top: 16px
+            margin-left: auto

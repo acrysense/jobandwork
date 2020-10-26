@@ -1,0 +1,171 @@
+// VARIABLES SECTION
+$open-sans: 'Open Sans', sans-serif // Roboto font-family
+$primary-font-size: 10px // Body font-size
+$primary-color: #0E0E0E // Body text color
+$blue-color: #007BFF // Blue color
+$blue-hover-color: #006FE5 // Blue hover color
+$white-color: #F9F9F9 // White color
+$gray-color: #95A3AB // Gray color
+$light-gray-color: #BDBDBD // Light gray color
+
+// COMMON DOCUMENT STYLES
+body
+    position: relative
+    overflow-x: hidden
+    font-family: $open-sans
+    font-size: $primary-font-size
+    color: $primary-color
+    background: #FCFCFC
+
+ul,
+ol,
+li
+    display: block
+    padding: 0
+    margin: 0
+    list-style: none
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+
+h2
+    font-size: 40px
+    font-weight: 600
+
+h3
+    font-size: 36px
+    font-weight: normal
+
+p
+    margin: 0
+
+a
+    display: inline-block
+    color: inherit
+    transition: all 0.5s
+    &:hover
+        color: inherit
+        text-decoration: none
+
+img
+    max-width: 100%
+
+// COMMON FOR PAGE ˆ
+.scroll-disabled
+    overflow: hidden
+
+.container
+    padding: 0 15px
+    margin: 0 auto
+    max-width: 1270px
+
+.btn
+    padding: 8px 60px
+    font-size: 16px
+    font-weight: 600
+    line-height: 30px
+    color: $white-color
+    background: $blue-color
+    &:hover
+        color: $white-color
+        background: $blue-color
+    &:active
+        background: $blue-hover-color
+
+.more
+    font-size: 16px
+    font-weight: 600
+    line-height: 30px
+    color: $blue-color
+    &--center
+        margin: 34px auto 0
+    &:hover
+        color: $blue-hover-color
+    &::before
+        content: ''
+        display: inline-block
+        margin-right: 5px
+        width: 1px
+        height: 20px
+        vertical-align: middle
+        background: $blue-color
+
+.head
+    text-align: center
+
+.content
+    margin-top: 25px
+
+.section-heading
+    margin: 24px 0 57px
+    &__description
+        margin-top: 26px
+        max-width: 645px
+        font-size: 26px
+        font-weight: normal
+        line-height: 43px
+    &__tag
+        margin-top: 42px
+        font-size: 20px
+        font-weight: 300
+        line-height: 32px
+
+.slick-arrow
+    position: absolute
+    bottom: -50px
+    z-index: 1
+    width: 38px
+    height: 32px
+    background: transparent
+    border: none
+    transition: all 0.5s ease
+    &:focus
+        outline: none
+
+.arrow-left
+    right: 50px
+    border-top: 1px solid $blue-color
+    border-right: 1px solid $blue-color
+    border-bottom: 1px solid $blue-color
+    border-left: 1px solid $blue-color
+
+.arrow-right
+    right: 12px
+    border-top: 1px solid $blue-color
+    border-right: 1px solid $blue-color
+    border-bottom: 1px solid $blue-color
+
+// MEDIA QUARIES
+@media (min-width: 1200px)
+    .head
+        margin-bottom: 64px
+    .more
+        margin: 10px 0 36px
+        &--mobile
+            display: none
+
+@media (max-width: 1199px)
+    .head
+        margin-bottom: 48px
+    .more
+        &--mobile
+            margin: 10px 12px 36px
+        &--center
+            display: none
+
+@media (min-width: 768px) and (max-width: 1199px)
+    .more
+        margin: 10px 12px 36px
+
+@media (min-width: 768px)
+    section
+        margin-bottom: 150px
+
+@media (max-width: 767px)
+    section
+        margin-bottom: 120px
+    .head
+        font-size: 28px
+        font-weight: 600
+    .more
+        margin: 10px 12px 36px

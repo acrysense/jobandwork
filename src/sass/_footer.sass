@@ -1,0 +1,109 @@
+.footer
+    position: relative
+    padding: 50px 0 34px
+    color: $white-color
+    background: $blue-color
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__main
+        text-align: center
+    &__copyright
+        margin-top: 38px
+    &__email,
+    &__phone
+        display: block
+        font-size: 18px
+        font-weight: normal
+        line-height: 28px
+        text-align: right
+    &__phone
+        margin-top: 25px
+
+.social
+    &__title
+        font-size: 18px
+        font-weight: normal
+        line-height: 28px
+    &__list
+        display: flex
+        align-items: center
+        margin-top: 22px
+    &__item + &__item
+        margin-left: 10px
+
+.footer-nav
+    &__list
+        display: flex
+        align-items: center
+    &__item + &__item
+        margin-left: 40px
+    &__link
+        font-size: 18px
+        font-weight: normal
+        line-height: 28px
+
+// MEDIA QUARIES
+@media (max-width: 1199px)
+    .footer
+        &__main,
+        &__contacts
+            margin-top: 35px
+        &__copyright
+            position: absolute
+            bottom: 14px
+            left: 50%
+            transform: translateX(-50%)
+        &__phone
+            margin-top: 17px
+    .social
+        position: absolute
+        top: 25px
+        left: 50%
+        transform: translateX(-50%)
+        &__title
+            display: none
+        &__list
+            margin-top: 0
+    .footer-nav
+        &__list
+            display: block
+            max-width: 400px
+            height: 100px
+            columns: 2
+            text-align: left
+        &__item + &__item
+            margin-left: 0
+
+@media (min-width: 768px) and (max-width: 1199px)
+    .footer-nav
+        &__item
+            margin-bottom: 17px
+
+@media (max-width: 767px)
+    .footer
+        &__main,
+        &__contacts
+            margin-top: 20px
+        &__email,
+        &__phone
+            font-size: 14px
+            font-weight: 600
+    .footer-nav
+        &__list
+            max-width: 270px
+        &__item
+            margin-bottom: 12px
+        &__link
+            font-size: 12px
+            line-height: 32px
+
+@media (max-width: 449px)
+    .footer
+        &__copyright
+            width: 100%
+    .footer-nav
+        &__list
+            max-width: 200px
+            height: 100%
+            columns: 1
