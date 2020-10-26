@@ -5,22 +5,23 @@
         justify-content: space-between
         align-items: center
 
-.city
+.city,
+.language
+    display: inline-block
     font-size: 18px
     font-weight: normal
     line-height: 28px
-    cursor: pointer
-    &::after
-        content: ''
-        display: inline-block
-        margin-left: 5px
-        width: 8px
-        height: 8px
-        vertical-align: baseline
-        background-image: url(../img/dist/sprite.svg#dropdown)
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center
+    padding: .6em 1.4em .5em .8em
+    margin: 0
+    appearance: none
+    background-color: transparent
+    background-image: url(../img/dist/sprite.svg#dropdown)
+    background-repeat: no-repeat
+    background-size: 8px
+    background-position: top 55% right 10px
+    border: none
+    &:focus
+        outline: none
 
 .nav
     &__list
