@@ -69,7 +69,15 @@
             background-repeat: no-repeat
             background-size: cover
             background-position: center
-    
+
+.background-road
+    position: absolute
+    right: 0
+    z-index: -1
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center right
+
 .card
     display: flex
     align-items: stretch
@@ -360,6 +368,10 @@
             top: -67px
             width: 831px
             height: 790px
+    .background-road
+        top: 250px
+        width: 1005px
+        height: 628px
     .blog
         &__title
             margin-bottom: 42px
@@ -381,6 +393,10 @@
             margin-top: 48px
 
 @media (min-width: 992px) and (max-width: 1199px)
+    .background-road
+        top: 120px
+        width: 550px
+        height: 380px
     .card
         &--all
             .card__item
@@ -407,6 +423,10 @@
             max-width: 36%
 
 @media (min-width: 768px) and (max-width: 991px)
+    .background-road
+        top: 120px
+        width: 450px
+        height: 300px
     .card
         &__item
             margin-bottom: 56px
@@ -472,6 +492,10 @@
                 background-position: center
         &__item + &__item
             margin-top: 160px
+    .background-road
+        top: 160px
+        width: 390px
+        height: 290px
     .card
         &__item
             margin: 0 auto 56px
@@ -535,6 +559,8 @@
     .offer
         &__image
             display: none
+    .background-road
+        display: none
 
 @media (max-width: 379px)
     .articles
