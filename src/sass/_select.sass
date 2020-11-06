@@ -1,0 +1,84 @@
+.selectric
+    display: inline-block
+    margin: 0
+    background-color: transparent
+    background-image: url(../img/dist/sprite.svg#dropdown)
+    background-repeat: no-repeat
+    background-size: 8px
+    background-position: top 50% right
+    appearance: none
+    border: none
+
+.selectric-select-header
+    height: 24px
+
+.selectric-select-form
+    border-bottom: 1px solid $primary-color
+
+.selectric .label
+    font-size: 16px
+    font-weight: 600
+
+.selectric-select-header .label
+    margin: 0 35px 0 0
+    height: 24px
+    line-height: 24px
+
+.selectric-select-header--language .label
+    margin: 0 15px 0 0
+    height: 24px
+    line-height: 24px
+
+.selectric-select-form .label
+    height: 30px
+    line-height: 30px
+
+.selectric-hover .selectric,
+.selectric-focus .selectric
+    border-color: $primary-color
+
+.selectric .button
+    display: none
+
+.selectric-items
+    background: $white-color
+    border: none
+    box-shadow: 0 4px 15px rgab(#000, 0.12)!important
+
+.selectric-select-header .selectric-items li
+    padding: 0 5px
+
+.selectric-select-form .selectric-items li
+    padding: 0 10px
+
+.selectric-items li
+    font-size: 16px
+    font-weight: 600
+    line-height: 30px
+    color: $dark-gray-color
+
+.selectric-items li.highlighted
+    color: $dark-gray-color
+    background: $light-blue-color
+
+// MEDIA QUARIES
+@media (min-width: 1200px)
+    .selectric-select-header
+        &--mobile
+            display: none
+
+@media (max-width: 1199px)
+    .selectric-select-header:not(.selectric-select-header--mobile)
+        display: none
+    .selectric-select-header--mobile
+        position: absolute
+        top: 24px
+        right: 60px
+        &:first-child
+            margin-right: 30px
+    .selectric-select-header .label
+        color: $white-color
+
+@media (max-width: 575px)
+    .selectric-select-form
+        overflow: hidden

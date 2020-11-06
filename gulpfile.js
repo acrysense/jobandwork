@@ -19,6 +19,7 @@ let paths = {
     libs: {
         src: [
             'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/selectric/src/jquery.selectric.js',
             'node_modules/slick-carousel/slick/slick.min.js'
 		],
         dest: baseDir + '/js',

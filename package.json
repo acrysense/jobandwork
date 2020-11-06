@@ -21,6 +21,7 @@
 		"gulp-svg-sprite": "^1.5.0",
 		"gulp-uglify-es": "^2.0.0",
 		"jquery": "^3.5.1",
+		"selectric": "^1.13.0",
 		"slick-carousel": "^1.8.1",
 		"swiper": "^6.2.0"
 	},

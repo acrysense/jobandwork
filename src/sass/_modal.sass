@@ -1,0 +1,87 @@
+.modal-overlay
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1000
+    background: rgba($primary-color, 0.6)
+    &--active
+        opacity: 1
+        visibility: visible
+
+.modal-enter
+    display: none
+    opacity: 0
+    visibility: hidden
+    &--active
+        display: block
+        opacity: 1
+        visibility: visible
+    &__close
+        position: fixed
+        top: 50%
+        right: 0
+        width: 20px
+        height: 20px
+        background-image: url(../img/dist/sprite.svg#close)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        cursor: pointer
+    &__form
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 1001
+        padding: 98px 133px
+        max-width: 800px
+        width: 100%
+        color: $primary-color
+        background: $white-color
+    &__title
+        padding-bottom: 10px
+        font-size: 40px
+        font-weight: 600
+        line-height: 60px
+        text-align: center
+    &__group
+        margin-top: 49px
+    &__help
+        display: block
+        margin-bottom: 14px
+        font-size: 18px
+        line-height: 28px
+        color: #6C6C6C
+    &__input
+        padding: 0 16px
+        width: 100%
+        font-size: 26px
+        line-height: 43px
+        color: $primary-color
+        background: transparent
+        border: none
+        border-bottom: 1px solid $primary-color
+        &:placeholder
+            color: $light-gray-color
+        &:focus
+            outline: none
+            border-bottom: 1px solid #6C6C6C
+    &__bottom
+        display: flex
+        align-items: flex-end
+    &__btn
+        padding: 8px 38px
+        max-width: 180px
+        background: $blue-color
+        border: none
+        box-shadow: 0 4px 15px rgba(#000, 0.12)
+    &__link
+        font-size: 14px
+        font-weight: 600
+        color: $blue-color

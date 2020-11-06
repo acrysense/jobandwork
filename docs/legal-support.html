@@ -16,32 +16,32 @@
                 <a href="" class="logo">
                     <img src="img/dist/logotype.svg" alt="">
                 </a>
-                <select class="city" id="city">
+                <select class="select-header">
                     <option value="khabarovsk">Хабаровск</option>
                     <option value="moscow">Москва</option>
                 </select>
                 <div class="overlay">
-                    <select class="city city--mobile" id="city">
+                    <select class="select-header select-header--mobile">
                         <option value="khabarovsk">Хабаровск</option>
                         <option value="moscow">Москва</option>
                     </select>
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a href="" class="nav__link">Профессии</a>
+                                <a href="/profession.html" class="nav__link">Профессии</a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav__link">Карьерный рост</a>
+                                <a href="/career.html" class="nav__link">Карьерный рост</a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav__link">Новости</a>
+                                <a href="/news.html" class="nav__link">Новости</a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav__link">Правовая поддержка</a>
+                                <a href="/legal-support.html" class="nav__link">Правовая поддержка</a>
                             </li>
                         </ul>
                     </nav>
-                    <select class="language language--mobile" id="language">
+                    <select class="select-header select-header--language select-header--mobile">
                         <option value="ru">RU</option>
                         <option value="en">EN</option>
                     </select>
@@ -69,7 +69,7 @@
                     </ul>
                 </div>
                 <div class="group">
-                    <select class="language" id="language">
+                    <select class="select-header select-header--language">
                         <option value="ru">RU</option>
                         <option value="en">EN</option>
                     </select>
@@ -85,6 +85,7 @@
         </div>
     </header>
     <!-- End of header -->
+    <!-- Content -->
     <section class="content">
         <div class="container">
             <!-- Breadcrumb -->
@@ -106,12 +107,12 @@
                 <h2 class="section-heading__title">Правовая поддержка</h2>
                 <p class="section-heading__description">Советы по поиску работы и общению с работодателями. Разъяснение законодательных норм для физических и юридических лиц.</p>
             </div>
-            <div class="filter">
-                <div class="filter__item">Поиск работы</div>
-                <div class="filter__item active">Кадровое делопроизводство</div>
-                <div class="filter__item">Расчет зарплаты</div>
-                <div class="filter__item">Медосмотры</div>
-            </div>
+            <ul class="filter" role="tablist">
+                <li class="filter__item">Поиск работы</li>
+                <li class="filter__item active">Кадровое делопроизводство</li>
+                <li class="filter__item">Расчет зарплаты</li>
+                <li class="filter__item">Медосмотры</li>
+            </ul>
             <div class="articles">
                 <div class="articles__wrapper articles__wrapper--slider">
                     <article class="articles__item articles__item--big">
@@ -304,6 +305,7 @@
             </div>
         </div>
     </section>
+    <!-- End of content -->
     <!-- Footer -->
     <footer class="footer" id="footer">
         <div class="container">

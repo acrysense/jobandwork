@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job & work</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="" class="logo">
+                    <img src="img/dist/logotype.svg" alt="">
+                </a>
+                <select class="select-header">
+                    <option value="khabarovsk">Хабаровск</option>
+                    <option value="moscow">Москва</option>
+                </select>
+                <div class="overlay">
+                    <select class="select-header select-header--mobile">
+                        <option value="khabarovsk">Хабаровск</option>
+                        <option value="moscow">Москва</option>
+                    </select>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="/profession.html" class="nav__link">Профессии</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="/career.html" class="nav__link">Карьерный рост</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="/news.html" class="nav__link">Новости</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="/legal-support.html" class="nav__link">Правовая поддержка</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <select class="select-header select-header--language select-header--mobile">
+                        <option value="ru">RU</option>
+                        <option value="en">EN</option>
+                    </select>
+                    <ul class="social__list social__list--menu">
+                        <li class="social__item">
+                            <a href="" class="social__link">
+                                <img src="img/dist/instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link">
+                                <img src="img/dist/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link">
+                                <img src="img/dist/vk.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link">
+                                <img src="img/dist/twitter.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="group">
+                    <select class="select-header select-header--language">
+                        <option value="ru">RU</option>
+                        <option value="en">EN</option>
+                    </select>
+                    <a href="" class="enter">Войти</a>
+                </div>
+                <button class="hamburger" id="hamburger-toggle">
+                    Меню
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+    <!-- Content -->
+    <section class="content">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__link" href="">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__link" href="/">Карьерный рост</a>
+                    </li>
+                </ol>
+            </nav>
+            <!-- End of breadcrumb -->
+            <div class="section-heading">
+                <h2 class="section-heading__title">Карьерный рост</h2>
+                <p class="section-heading__description">Вы узнаете варианты перехода на новый социальный и профессиональный уровень, увидите профессии предшествующие найденной.</p>
+            </div>
+            <ul class="filter" role="tablist">
+                <li class="filter__item active">Поиск по должности</li>
+                <li class="filter__item">Поиск по университету</li>
+            </ul>
+            <div class="tabs">
+                <div class="tabs__content active">
+                    <form action="" class="career-form">
+                        <div class="career-form__inner">
+                            <label for="profession" class="career-form__help">Профессия</label>
+                            <input type="text" class="career-form__input" id="profession" placeholder="Введите название профессии" required>
+                        </div>
+                        <div class="career-form__inner career-form__inner--flex">
+                            <div class="career-form__group">
+                                <div class="career-form__mark">Город<span></span></div>
+                                <select class="select-form">
+                                    <option value="khabarovsk">Хабаровск</option>
+                                    <option value="moscow">Москва</option>
+                                </select>
+                            </div>
+                            <div class="career-form__group">
+                                <div class="career-form__mark">Пол<span></span></div>
+                                <div class="career-form__checkbox">
+                                    <label for="male1" class="custom-checkbox">
+                                        <input type="radio" name="sex" class="custom-checkbox__input" id="male1" required>
+                                        <span class="custom-checkbox__label">М</span>
+                                    </label>
+                                    <label for="female1" class="custom-checkbox">
+                                        <input type="radio" name="sex" class="custom-checkbox__input" id="female1" required>
+                                        <span class="custom-checkbox__label">Ж</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="career-form__group">
+                                <div class="career-form__mark">Возраст<span></span></div>
+                                <div class="career-form__select-group">
+                                    <select class="select-form">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                        <option value="60">60</option>
+                                    </select>
+                                    <div class="career-form__delimiter"></div>
+                                    <select class="select-form">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                        <option value="60">60</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="career-form__btn btn">Найти</button>
+                    </form>
+                    <div class="career-growth">
+                        <div class="career-growth__item"></div>
+                        <div class="career-growth__item">
+                            <div class="career-growth__position">Дворник</div>
+                        </div>
+                        <div class="career-growth__item"></div>
+                    </div>
+                    <div class="vacancy">
+                        <div class="vacancy__wrapper">
+                            <div class="vacancy__inner">
+                                <ul class="vacancy__list">
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Слесарь-ремонтник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Техник-монтажник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Ремонтник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Продавец-консультант мебели</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Продавец-консультант в магазин волос</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__inner">
+                                <ul class="vacancy__list">
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Слесарь-ремонтник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Техник-монтажник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Ремонтник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Продавец-консультант мебели</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Продавец-консультант в магазин волос</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__inner">
+                                <ul class="vacancy__list">
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Слесарь-ремонтник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Техник-монтажник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Ремонтник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Продавец-консультант мебели</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Продавец-консультант в магазин волос</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="vacancy__wrapper">
+                            <div class="vacancy__inner">
+                                <ul class="vacancy__list">
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Старший дворник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Начальник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Помощник руководителя без опыта</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Начальник участка</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Старший дворник офисных помещений</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__inner">
+                                <ul class="vacancy__list">
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Старший дворник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Начальник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Помощник руководителя без опыта</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Начальник участка</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Старший дворник офисных помещений</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__inner">
+                                <ul class="vacancy__list">
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Старший дворник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Начальник</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Помощник руководителя без опыта</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Начальник участка</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Старший дворник офисных помещений</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Старший дворник офисных помещений</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Старший дворник офисных помещений</a>
+                                    </li>
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Старший дворник офисных помещений</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content">
+                    <form action="" class="career-form">
+                        <div class="career-form__inner career-form__inner--flex">
+                            <div class="career-form__group career-form__group--small">
+                                <div class="career-form__mark">Страна</div>
+                                <select class="select-form">
+                                    <option value="russia">Россия</option>
+                                    <option value="kazakhstan">Казахстан</option>
+                                </select>
+                            </div>
+                            <div class="career-form__group career-form__group--small">
+                                <div class="career-form__mark">Город</div>
+                                <select class="select-form">
+                                    <option value="khabarovsk">Хабаровск</option>
+                                    <option value="moscow">Москва</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="career-form__inner">
+                            <div class="career-form__group">
+                                <div class="career-form__mark">Университет</div>
+                                <select class="select-form">
+                                    <option value="russia">Дальневосточный университет путей сообщения</option>
+                                    <option value="kazakhstan">Дальневосточный университет путей сообщения</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="career-form__inner career-form__inner--flex">
+                            <div class="career-form__group">
+                                <div class="career-form__mark">Пол<span></span></div>
+                                <div class="career-form__checkbox">
+                                    <label for="male2" class="custom-checkbox">
+                                        <input type="radio" name="sex" class="custom-checkbox__input" id="male2" required>
+                                        <span class="custom-checkbox__label">М</span>
+                                    </label>
+                                    <label for="female2" class="custom-checkbox">
+                                        <input type="radio" name="sex" class="custom-checkbox__input" id="female2" required>
+                                        <span class="custom-checkbox__label">Ж</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="career-form__group">
+                                <div class="career-form__mark">Возраст<span></span></div>
+                                <div class="career-form__select-group">
+                                    <select class="select-form">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                        <option value="60">60</option>
+                                    </select>
+                                    <div class="career-form__delimiter"></div>
+                                    <select class="select-form">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                        <option value="60">60</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="career-form__btn btn">Найти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of content -->
+    <!-- Featured articles -->
+    <section class="resume" id="resume">
+        <div class="container">
+            <h3 class="head">Резюме</h3>
+            <div class="section-heading">
+                <div class="section-heading__light">Список резюме с образованием в выбранном универститете.</div>
+            </div>
+            <div class="resume__wrapper">
+                <div class="resume__item">
+                    <div class="resume__inner">
+                        <div class="resume__title">Должность</div>
+                        <div class="resume__title">Опыт</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Дворник</div>
+                        <div class="resume__vacancy">1 год</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Продавец-консультант мебели</div>
+                        <div class="resume__vacancy">6 мес.</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Техник</div>
+                        <div class="resume__vacancy">1 год 4 мес.</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Продавец</div>
+                        <div class="resume__vacancy">13 лет 11 мес.</div>
+                    </div>
+                </div>
+                <div class="resume__item">
+                    <div class="resume__inner">
+                        <div class="resume__title">Должность</div>
+                        <div class="resume__title">Опыт</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Монолитчик-каменщик</div>
+                        <div class="resume__vacancy">2 года 3 мес.</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Старший дворник</div>
+                        <div class="resume__vacancy">2 мес.</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Продавец-консультант мебели</div>
+                        <div class="resume__vacancy">3 год 6 мес.</div>
+                    </div>
+                </div>
+                <div class="resume__item">
+                    <div class="resume__inner">
+                        <div class="resume__title">Должность</div>
+                        <div class="resume__title">Опыт</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Дворник</div>
+                        <div class="resume__vacancy">1 год</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Продавец-консультант мебели</div>
+                        <div class="resume__vacancy">6 мес.</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Техник</div>
+                        <div class="resume__vacancy">1 год 4 мес.</div>
+                    </div>
+                    <div class="resume__inner">
+                        <div class="resume__vacancy">Продавец</div>
+                        <div class="resume__vacancy">13 лет 11 мес.</div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="more more--center">Еще резюме</a>
+        </div>
+    </section>
+    <!-- End of featured articles -->
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="social">
+                    <div class="social__title">Соц. сети:</div>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="" class="social__link">
+                                <img src="img/dist/instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link">
+                                <img src="img/dist/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link">
+                                <img src="img/dist/vk.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__link">
+                                <img src="img/dist/twitter.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__main">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Профессии</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Карьерный рост</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Новости</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">Правовая поддержка</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="footer__copyright">© 2020 год. Job & Work. Все права защищены.</p>
+                </div>
+                <div class="footer__contacts">
+                    <a href="mailto:hello@jobandwork.com" class="footer__email">hello@jobandwork.com</a>
+                    <a href="tel:88005559590" class="footer__phone">тел. 8 (800) 555-95-90</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+    <!-- Modal -->
+    <div class="modal-enter">
+        <form action="" class="modal-enter__form">
+            <div class="modal-enter__close"></div>
+            <div class="modal-enter__title">Регистрация</div>
+            <div class="modal-enter__group">
+                <label for="email" class="modal-enter__help">Почта</label>
+                <input type="email" class="modal-enter__input" id="email" placeholder="hello@jobandwork.com" required>
+            </div>
+            <div class="modal-enter__group">
+                <label for="password" class="modal-enter__help">Пароль</label>
+                <input type="password" class="modal-enter__input" id="password" placeholder="******" required>
+            </div>
+            <div class="modal-enter__group">
+                <label for="confirm-password" class="modal-enter__help">Подтверждение пароля</label>
+                <input type="password" class="modal-enter__input" id="confirm-password" placeholder="******" required>
+            </div>
+            <div class="modal-enter__social">
+                <div class="modal-enter__sub">через соц.сети:</div>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <img src="img/dist/instagram.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <img src="img/dist/facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <img src="img/dist/vk.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <img src="img/dist/twitter.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-enter__bottom">
+                <button class="modal-enter__btn btn">Регистрация</button>
+                <div class="modal-enter__more">
+                    <a href="" class="modal-enter__link">У Вас уже есть аккаунт?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-overlay"></div>
+    <!-- End of modal -->
+    <!-- Scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
