@@ -10,13 +10,13 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header" id="header">
+    <header class="header header--auth" id="header">
         <div class="container">
             <div class="header__wrapper">
                 <a href="" class="logo">
                     <img src="img/dist/logotype.svg" alt="">
                 </a>
-                <select class="select-header">
+                <select class="select-header select-header--city">
                     <option value="khabarovsk">Хабаровск</option>
                     <option value="moscow">Москва</option>
                 </select>
@@ -47,24 +47,16 @@
                     </select>
                     <ul class="social__list social__list--menu">
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/instagram.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--instagram"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/facebook.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--facebook"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/vk.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--vk"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/twitter.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--twitter"></a>
                         </li>
                     </ul>
                 </div>
@@ -74,6 +66,15 @@
                         <option value="en">EN</option>
                     </select>
                     <a href="" class="enter">Войти</a>
+                </div>
+                <div class="profile">
+                    <a href="" class="profile__message">
+                        <span class="profile__notification">2</span>
+                    </a>
+                    <a href="" class="profile__bell"></a>
+                    <a href="" class="profile__photo">
+                        <div class="profile__ava" style="background-image: url(img/dist/big-ava.png);"></div>
+                    </a>
                 </div>
                 <button class="hamburger" id="hamburger-toggle">
                     Меню
@@ -152,183 +153,239 @@
             <div class="tabs">
                 <div class="tabs__content active">
                     <div class="information">
-                        <div class="information__inner">
-                            <div class="information__head">
-                                <h3 class="information__title">Опыт работы</h3>
-                                <a href="" class="information__add">Добавить</a>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__heading">Администратор телекоммуникационной сети</div>
-                                        <div class="information__tag">DANYCOM</div>
+                        <div class="information__wrapper">
+                            <div class="information__inner">
+                                <div class="information__head">
+                                    <h3 class="information__title">Опыт работы</h3>
+                                    <a href="" class="information__add">Добавить</a>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__heading">Администратор телекоммуникационной сети</div>
+                                            <div class="information__tag">DANYCOM</div>
+                                        </div>
+                                        <div class="information__date">май 2015 — 2017 ноябрь</div>
                                     </div>
-                                    <div class="information__date">май 2015 — 2017 ноябрь</div>
-                                </div>
-                                <div class="information__action">
-                                    <a href="" class="information__edit"></a>
-                                    <a href="" class="information__delete"></a>
-                                </div>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__heading">Ведущий аминистратор телекоммуникационной сети</div>
-                                        <div class="information__tag">DANYCOM</div>
+                                    <div class="information__action">
+                                        <a href="" class="information__edit"></a>
+                                        <a href="" class="information__delete"></a>
                                     </div>
-                                    <div class="information__date">ноябрь 2017 — 2019 декабрь</div>
                                 </div>
-                                <div class="information__action">
-                                    <a href="" class="information__edit"></a>
-                                    <a href="" class="information__delete"></a>
-                                </div>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__heading">Заместитель начальника отдела</div>
-                                        <div class="information__tag">DANYCOM</div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__heading">Ведущий аминистратор телекоммуникационной сети</div>
+                                            <div class="information__tag">DANYCOM</div>
+                                        </div>
+                                        <div class="information__date">ноябрь 2017 — 2019 декабрь</div>
                                     </div>
-                                    <div class="information__date">декабрь 2019 — по настоящее время</div>
-                                </div>
-                                <div class="information__action">
-                                    <a href="" class="information__edit"></a>
-                                    <a href="" class="information__delete"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="information__inner">
-                            <div class="information__head">
-                                <h3 class="information__title">Образование</h3>
-                                <a href="" class="information__add">Добавить</a>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__heading">Магистр</div>
-                                        <div class="information__tag">Безопасность информационных систем</div>
-                                        <div class="information__heading">Дальневосточный государственный университет путей сообщения</div>
+                                    <div class="information__action">
+                                        <a href="" class="information__edit"></a>
+                                        <a href="" class="information__delete"></a>
                                     </div>
-                                    <div class="information__date">2011 — 2015</div>
                                 </div>
-                                <div class="information__action">
-                                    <a href="" class="information__edit"></a>
-                                    <a href="" class="information__delete"></a>
-                                </div>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__heading">Бакалавр</div>
-                                        <div class="information__tag">Безопасность информационных систем</div>
-                                        <div class="information__heading">Дальневосточный государственный университет путей сообщения</div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__heading">Заместитель начальника отдела</div>
+                                            <div class="information__tag">DANYCOM</div>
+                                        </div>
+                                        <div class="information__date">декабрь 2019 — по настоящее время</div>
                                     </div>
-                                    <div class="information__date">ноябрь 2017 — 2019 декабрь</div>
-                                </div>
-                                <div class="information__action">
-                                    <a href="" class="information__edit"></a>
-                                    <a href="" class="information__delete"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="information__inner information__inner--small">
-                            <div class="information__head">
-                                <h3 class="information__title">Имеющиеся навыки</h3>
-                                <a href="" class="information__add">Добавить</a>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__tag">Знание git</div>
-                                        <div class="information__tag">Умение работать в команде</div>
-                                        <div class="information__tag">Rest API</div>
-                                        <div class="information__tag">CSS3</div>
-                                        <div class="information__tag">HTML5</div>
-                                        <div class="information__tag">Знание ООП</div>
-                                        <div class="information__tag">JavaScript</div>
+                                    <div class="information__action">
+                                        <a href="" class="information__edit"></a>
+                                        <a href="" class="information__delete"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="information__inner">
-                            <div class="information__head">
-                                <h3 class="information__title">Сертификаты</h3>
-                                <a href="" class="information__add">Добавить</a>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__heading">Interconnecting Cisco Networking Devices Part 2 (ICND2)</div>
-                                        <div class="information__tag">Microtest</div>
-                                        <div class="information__heading">Cisco Systems</div>
+                        <div class="information__wrapper">
+                            <div class="information__inner">
+                                <div class="information__head">
+                                    <h3 class="information__title">Образование</h3>
+                                    <a href="" class="information__add">Добавить</a>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__heading">Магистр</div>
+                                            <div class="information__tag">Безопасность информационных систем</div>
+                                            <div class="information__heading">Дальневосточный государственный университет путей сообщения</div>
+                                        </div>
+                                        <div class="information__date">2011 — 2015</div>
                                     </div>
-                                    <div class="information__date">ноябрь 2015</div>
-                                </div>
-                                <div class="information__action">
-                                    <a href="" class="information__edit"></a>
-                                    <a href="" class="information__delete"></a>
-                                </div>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__heading">Использование сетевого оборудования (часть 3)</div>
-                                        <div class="information__tag">Система дистанционного обучения DANYCOM</div>
-                                        <div class="information__heading">DANYCOM</div>
-                                    </div>
-                                    <div class="information__date">август 2019</div>
-                                </div>
-                                <div class="information__action">
-                                    <a href="" class="information__edit"></a>
-                                    <a href="" class="information__delete"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="information__inner information__inner--small">
-                            <div class="information__head">
-                                <h3 class="information__title">Языки</h3>
-                                <a href="" class="information__add">Добавить</a>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__heading">Русский</div>
-                                        <div class="information__tag">С2 — В совершенстве</div>
+                                    <div class="information__action">
+                                        <a href="" class="information__edit"></a>
+                                        <a href="" class="information__delete"></a>
                                     </div>
                                 </div>
-                                <div class="information__action">
-                                    <a href="" class="information__edit"></a>
-                                    <a href="" class="information__delete"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="information__inner information__inner--small">
-                            <div class="information__head">
-                                <h3 class="information__title">Вождение</h3>
-                                <a href="" class="information__add">Редактировать</a>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__heading">Есть личный автомобиль</div>
-                                        <div class="information__heading">Права Категории</div>
-                                        <div class="information__tag">A</div>
-                                        <div class="information__tag">В</div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__heading">Бакалавр</div>
+                                            <div class="information__tag">Безопасность информационных систем</div>
+                                            <div class="information__heading">Дальневосточный государственный университет путей сообщения</div>
+                                        </div>
+                                        <div class="information__date">ноябрь 2017 — 2019 декабрь</div>
+                                    </div>
+                                    <div class="information__action">
+                                        <a href="" class="information__edit"></a>
+                                        <a href="" class="information__delete"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="information__inner information__inner--small">
-                            <div class="information__head">
-                                <h3 class="information__title">Социальные сети</h3>
-                                <a href="" class="information__add">Добавить</a>
+                        <div class="information__wrapper">
+                            <div class="information__inner information__inner--small">
+                                <div class="information__head">
+                                    <h3 class="information__title">Имеющиеся навыки</h3>
+                                    <a href="" class="information__add">Добавить</a>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__tag">Знание git</div>
+                                            <div class="information__tag">Умение работать в команде</div>
+                                            <div class="information__tag">Rest API</div>
+                                            <div class="information__tag">CSS3</div>
+                                            <div class="information__tag">HTML5</div>
+                                            <div class="information__tag">Знание ООП</div>
+                                            <div class="information__tag">JavaScript</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__tag">Одноклассники</div>
-                                        <a href="" class="information__link">https://ok.com/a.fhhtjets</a>
-                                        <div class="information__tag">Вконтакте</div>
+                            <div class="info-news">
+                                <div class="info-news__head">
+                                    <div class="info-news__bg" style="background-image: url(img/dist/info-news.png);"></div>
+                                </div>
+                                <div class="info-news__body">
+                                    <a href="" class="info-news__title">Основные концепции React.js, о которых стоит знать</a>
+                                </div>
+                                <a href="" class="info-news__more">Другие статьи</a>
+                            </div>
+                        </div>
+                        <div class="information__wrapper">
+                            <div class="information__inner">
+                                <div class="information__head">
+                                    <h3 class="information__title">Сертификаты</h3>
+                                    <a href="" class="information__add">Добавить</a>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__heading">Interconnecting Cisco Networking Devices Part 2 (ICND2)</div>
+                                            <div class="information__tag">Microtest</div>
+                                            <div class="information__heading">Cisco Systems</div>
+                                        </div>
+                                        <div class="information__date">ноябрь 2015</div>
+                                    </div>
+                                    <div class="information__action">
+                                        <a href="" class="information__edit"></a>
+                                        <a href="" class="information__delete"></a>
+                                    </div>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__heading">Использование сетевого оборудования (часть 3)</div>
+                                            <div class="information__tag">Система дистанционного обучения DANYCOM</div>
+                                            <div class="information__heading">DANYCOM</div>
+                                        </div>
+                                        <div class="information__date">август 2019</div>
+                                    </div>
+                                    <div class="information__action">
+                                        <a href="" class="information__edit"></a>
+                                        <a href="" class="information__delete"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="information__wrapper">
+                            <div class="information__inner information__inner--small">
+                                <div class="information__head">
+                                    <h3 class="information__title">Языки</h3>
+                                    <a href="" class="information__add">Добавить</a>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__group">
+                                                <div class="information__heading">Русский</div>
+                                                <div class="information__tag-group">
+                                                    <div class="information__tag">С2 — В совершенстве</div>
+                                                </div>
+                                                <div class="information__action">
+                                                    <a href="" class="information__edit"></a>
+                                                    <a href="" class="information__delete"></a>
+                                                </div>
+                                            </div>
+                                            <div class="information__group">
+                                                <div class="information__heading">Английский</div>
+                                                <div class="information__tag-group">
+                                                    <div class="information__tag">В1 — Средний</div>
+                                                </div>
+                                                <div class="information__action">
+                                                    <a href="" class="information__edit"></a>
+                                                    <a href="" class="information__delete"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="information__wrapper">
+                            <div class="information__inner information__inner--small">
+                                <div class="information__head">
+                                    <h3 class="information__title">Вождение</h3>
+                                    <a href="" class="information__add">Редактировать</a>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__group">
+                                                <div class="information__heading">Есть личный автомобиль</div>
+                                            </div>
+                                            <div class="information__group">
+                                                <div class="information__heading">Права Категории</div>
+                                                <div class="information__tag-group">
+                                                    <div class="information__tag">A</div>
+                                                    <div class="information__tag">В</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="information__wrapper">
+                            <div class="information__inner information__inner--small">
+                                <div class="information__head">
+                                    <h3 class="information__title">Социальные сети</h3>
+                                    <a href="" class="information__add">Добавить</a>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__group">
+                                                <div class="information__tag">Одноклассники</div>
+                                                <a href="" class="information__link">https://ok.com/a.fhhtjets</a>
+                                                <div class="information__action">
+                                                    <a href="" class="information__edit"></a>
+                                                    <a href="" class="information__delete"></a>
+                                                </div>
+                                            </div>
+                                            <div class="information__group">
+                                                <div class="information__tag">Вконтакте</div>
+                                                <a href="" class="information__link">https://ok.com/a.fhhtjets</a>
+                                                <div class="information__action">
+                                                    <a href="" class="information__edit"></a>
+                                                    <a href="" class="information__delete"></a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -337,34 +394,47 @@
                 </div>
                 <div class="tabs__content">
                     <div class="information">
-                        <div class="information__inner information__inner--small">
-                            <div class="information__head">
-                                <h3 class="information__title">Требуемые навыки</h3>
-                                <a href="" class="information__add">Обновить</a>
-                            </div>
-                            <div class="information__item">
-                                <div class="information__details">
-                                    <div class="information__category">
-                                        <div class="information__tag">Знание git</div>
-                                        <div class="information__tag">Умение работать в команде</div>
-                                        <div class="information__tag">Rest API</div>
-                                        <div class="information__tag">CSS3</div>
-                                        <div class="information__tag">HTML5</div>
-                                        <div class="information__tag">Знание ООП</div>
-                                        <div class="information__tag">JavaScript</div>
+                        <div class="information__wrapper">
+                            <div class="information__inner information__inner--small">
+                                <div class="information__head">
+                                    <h3 class="information__title">Требуемые навыки</h3>
+                                    <a href="" class="information__add">Обновить</a>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__details">
+                                        <div class="information__category">
+                                            <div class="information__tag">Знание git</div>
+                                            <div class="information__tag">Умение работать в команде</div>
+                                            <div class="information__tag">Rest API</div>
+                                            <div class="information__tag">CSS3</div>
+                                            <div class="information__tag">HTML5</div>
+                                            <div class="information__tag">Знание ООП</div>
+                                            <div class="information__tag">JavaScript</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="information__inner">
-                            <div class="information__head">
-                                <h3 class="information__title">Развитие карьеры</h3>
-                                <a href="" class="information__add">Обновить</a>
+                            <div class="info-news">
+                                <div class="info-news__head">
+                                    <div class="info-news__bg" style="background-image: url(img/dist/info-news.png);"></div>
+                                </div>
+                                <div class="info-news__body">
+                                    <a href="" class="info-news__title">Основные концепции React.js, о которых стоит знать</a>
+                                </div>
+                                <a href="" class="info-news__more">Другие статьи</a>
                             </div>
-                            <div class="information__item">
-                                <div class="information__category">
-                                    <div class="information__career">JavaScript разработчик (junior)</div>
-                                    <div class="information__career">JavaScript разработчик (middle)</div>
+                        </div>
+                        <div class="information__wrapper">
+                            <div class="information__inner">
+                                <div class="information__head">
+                                    <h3 class="information__title">Развитие карьеры</h3>
+                                    <a href="" class="information__add">Обновить</a>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__category">
+                                        <div class="information__career">JavaScript разработчик (junior)</div>
+                                        <div class="information__career">JavaScript разработчик (middle)</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -402,24 +472,16 @@
                     <div class="social__title">Соц. сети:</div>
                     <ul class="social__list">
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/instagram.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--instagram"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/facebook.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--facebook"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/vk.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--vk"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/twitter.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--twitter"></a>
                         </li>
                     </ul>
                 </div>
@@ -450,6 +512,348 @@
         </div>
     </footer>
     <!-- End of footer -->
+    <!-- Modal -->
+    <div class="modal">
+        <!--<form action="" class="modal__form">
+            <div class="modal__close"></div>
+            <div class="modal__title">Регистрация</div>
+            <div class="modal__group">
+                <label for="email" class="modal__help">Почта</label>
+                <input type="email" class="modal__input" id="email" placeholder="hello@jobandwork.com" required>
+            </div>
+            <div class="modal__group">
+                <label for="password" class="modal__help">Пароль</label>
+                <input type="password" class="modal__input" id="password" placeholder="******" required>
+            </div>
+            <div class="modal__group">
+                <label for="confirm-password" class="modal__help">Подтверждение пароля</label>
+                <input type="password" class="modal__input" id="confirm-password" placeholder="******" required>
+            </div>
+            <div class="modal__social">
+                <div class="modal__head">через соц.сети:</div>
+                <ul class="social__list social__list--modal">
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--gmail-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--facebook-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--vk-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--mail-blue"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__btn btn">Регистрация</button>
+                <div class="modal__more">
+                    <a href="" class="modal__link">У Вас уже есть аккаунт?</a>
+                </div>
+            </div>
+        </form>-->
+        <form action="" class="modal__form">
+            <div class="modal__close"></div>
+            <div class="modal__title">Авторизация</div>
+            <div class="modal__group">
+                <label for="email" class="modal__help">Почта</label>
+                <input type="email" class="modal__input" id="email" placeholder="hello@jobandwork.com" required>
+            </div>
+            <div class="modal__group">
+                <label for="password" class="modal__help">Пароль</label>
+                <input type="password" class="modal__input" id="password" placeholder="******" required>
+            </div>
+            <div class="modal__social">
+                <div class="modal__head">через соц.сети:</div>
+                <ul class="social__list social__list--modal">
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--gmail-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--facebook-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--vk-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--mail-blue"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__btn btn">Регистрация</button>
+                <div class="modal__more">
+                    <a href="" class="modal__link">У Вас еще нет аккаунта?</a>
+                    <a href="" class="modal__link">Забыли пароль?</a>
+                </div>
+            </div>
+        </form>
+        <!--<form action="" class="modal__form">
+            <div class="modal__close"></div>
+            <div class="modal__title">Восстановление пароля</div>
+            <div class="modal__group">
+                <label for="email" class="modal__help">Почта</label>
+                <input type="email" class="modal__input" id="email" placeholder="hello@jobandwork.com" required>
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__btn btn">Регистрация</button>
+                <div class="modal__more">
+                    <a href="" class="modal__link">У Вас уже есть аккаунт?</a>
+                    <a href="" class="modal__link">У Вас еще нет аккаунта?</a>
+                </div>
+            </div>
+        </form>-->
+    </div>
+    <div class="modal modal--edit">
+        <form action="" class="modal__form modal__form--edit">
+            <div class="modal__close"></div>
+            <div class="modal__title">Основные данные</div>
+            <div class="modal__group">
+                <label for="name-profile" class="modal__help">ФИО</label>
+                <input type="text" class="modal__input" id="name-profile" placeholder="Макаров Сергей Владимирович" required>
+            </div>
+            <div class="modal__inner">
+                <div class="modal__group">
+                    <div class="modal__mark">Страна</div>
+                    <select class="select-form">
+                        <option value="russia">Россия</option>
+                        <option value="kazakhstan">Казахстан</option>
+                    </select>
+                </div>
+                <div class="modal__group">
+                    <div class="modal__mark">Город</div>
+                    <select class="select-form">
+                        <option value="khabarovsk">Хабаровск</option>
+                        <option value="moscow">Москва</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal__group">
+                <label for="post-profile" class="modal__help">Должность</label>
+                <input type="text" class="modal__input" id="post-profile" placeholder="JavaScript разработчик" required>
+            </div>
+            <div class="modal__inner">
+                <div class="modal__group">
+                    <div class="modal__mark">Готовность к командировкам<span></span></div>
+                </div>
+                <div class="modal__group">
+                    <div class="modal__mark active">Готовность к переезду<span></span>
+                        <a href="" class="modal__link">Добавить</a>
+                    </div>
+                    <div class="modal__wrap">
+                        <select class="select-form">
+                            <option value="khabarovsk">Германия</option>
+                            <option value="moscow">Франция</option>
+                        </select>
+                    </div>
+                    <div class="modal__wrap">
+                        <select class="select-form">
+                            <option value="khabarovsk">Германия</option>
+                            <option value="moscow">Франция</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="modal__btn btn">Сохранить</button>
+        </form>
+        <!--<form action="" class="modal__form modal__form--edit">
+            <div class="modal__close"></div>
+            <div class="modal__title">Работа</div>
+            <div class="modal__group">
+                <label for="position-profile" class="modal__help">Должность</label>
+                <input type="text" class="modal__input" id="position-profile" placeholder="Дальневосточный государственный университет путей сообщения" required>
+            </div>
+            <div class="modal__group">
+                <label for="company-profile" class="modal__help">Название компании</label>
+                <input type="text" class="modal__input" id="company-profile" placeholder="DANYCOM" required>
+            </div>
+            <div class="modal__inner">
+                <div class="modal__group">
+                    <div class="modal__mark">Период работы</div>
+                    <div class="modal__select-group">
+                        <select class="select-form">
+                            <option value="november">ноябрь</option>
+                            <option value="december">декабрь</option>
+                        </select>
+                        <select class="select-form">
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal__group">
+                    <div class="modal__mark">&nbsp;</div>
+                    <div class="modal__select-group">
+                        <select class="select-form">
+                            <option value="november">ноябрь</option>
+                            <option value="december">декабрь</option>
+                        </select>
+                        <select class="select-form">
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="modal__btn btn">Сохранить</button>
+        </form>-->
+        <!--<form action="" class="modal__form modal__form--edit">
+            <div class="modal__close"></div>
+            <div class="modal__title">Образование</div>
+            <div class="modal__group">
+                <label for="university-profile" class="modal__help">Название университета</label>
+                <input type="text" class="modal__input" id="university-profile" placeholder="Дальневосточный государственный университет путей сообщения" required>
+            </div>
+            <div class="modal__inner">
+                <div class="modal__group">
+                    <div class="modal__mark">Степень</div>
+                    <select class="select-form">
+                        <option value="mag">Магистр</option>
+                        <option value="bak">Бакалавр</option>
+                    </select>
+                </div>
+                <div class="modal__group">
+                    <div class="modal__mark">Область исследования</div>
+                    <select class="select-form">
+                        <option value="security1">Безопасность информационных систем</option>
+                        <option value="security2">Безопасность информационных систем</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal__inner">
+                <div class="modal__group">
+                    <div class="modal__mark">Период работы</div>
+                    <div class="modal__select-group">
+                        <select class="select-form">
+                            <option value="november">ноябрь</option>
+                            <option value="december">декабрь</option>
+                        </select>
+                        <select class="select-form">
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal__group">
+                    <div class="modal__mark">&nbsp;</div>
+                    <div class="modal__select-group">
+                        <select class="select-form">
+                            <option value="november">ноябрь</option>
+                            <option value="december">декабрь</option>
+                        </select>
+                        <select class="select-form">
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="modal__btn btn">Сохранить</button>
+        </form>-->
+        <!--<form action="" class="modal__form modal__form--edit">
+            <div class="modal__close"></div>
+            <div class="modal__title">Добавление навыка</div>
+            <div class="modal__group">
+                <div class="modal__mark">Выбор навыка</div>
+                <select class="select-form">
+                    <option value="skill1">Умение работать в команде</option>
+                    <option value="skill2">Умение работать в команде</option>
+                </select>
+            </div>
+            <button class="modal__btn btn">Сохранить</button>
+        </form>-->
+        <!--<form action="" class="modal__form modal__form--edit">
+            <div class="modal__close"></div>
+            <div class="modal__title">Добавление сертификата</div>
+            <div class="modal__inner">
+                <div class="modal__group">
+                    <div class="modal__mark">Название компании</div>
+                    <select class="select-form">
+                        <option value="microtest">Microtest</option>
+                        <option value="danycam">DANYCAM</option>
+                    </select>
+                </div>
+                <div class="modal__group">
+                    <div class="modal__mark">Область исследования</div>
+                    <select class="select-form">
+                        <option value="cisco1">Cisco Systems</option>
+                        <option value="cisco2">Cisco Systems</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal__inner">
+                <div class="modal__group">
+                    <div class="modal__mark">Период работы</div>
+                    <div class="modal__select-group">
+                        <select class="select-form">
+                            <option value="november">ноябрь</option>
+                            <option value="december">декабрь</option>
+                        </select>
+                        <select class="select-form">
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal__group">
+                    <div class="modal__mark">&nbsp;</div>
+                    <div class="modal__select-group">
+                        <select class="select-form">
+                            <option value="november">ноябрь</option>
+                            <option value="december">декабрь</option>
+                        </select>
+                        <select class="select-form">
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="modal__btn btn">Сохранить</button>
+        </form>-->
+        <!--<form action="" class="modal__form modal__form--edit">
+            <div class="modal__close"></div>
+            <div class="modal__title">Добавление языка</div>
+            <div class="modal__inner">
+                <div class="modal__group">
+                    <div class="modal__mark">Выбор языка</div>
+                    <select class="select-form">
+                        <option value="en">Английский</option>
+                        <option value="ru">Русский</option>
+                    </select>
+                </div>
+                <div class="modal__group">
+                    <div class="modal__mark">Выбор уровень</div>
+                    <select class="select-form">
+                        <option value="b11">В1 — Средний</option>
+                        <option value="b12">В1 — Средний</option>
+                    </select>
+                </div>
+            </div>
+            <button class="modal__btn btn">Сохранить</button>
+        </form>-->
+        <!--<form action="" class="modal__form modal__form--edit">
+            <div class="modal__close"></div>
+            <div class="modal__title">Добавление соц.сети</div>
+            <div class="modal__inner">
+                <div class="modal__group">
+                    <div class="modal__mark">Выбор соц. сети</div>
+                    <select class="select-form">
+                        <option value="ok">Одноклассники</option>
+                        <option value="vk">Вконтакте</option>
+                    </select>
+                </div>
+                <div class="modal__group">
+                    <label for="link-profile" class="modal__help">Ссылка</label>
+                    <input type="text" class="modal__input" id="link-profile" placeholder="https://ok.com/a.fhhtjets" required>
+                </div>
+            </div>
+            <button class="modal__btn btn">Сохранить</button>
+        </form>-->
+    </div>
+    <div class="modal-overlay"></div>
+    <!-- End of modal -->
     <!-- Scripts -->
     <script src="js/vendor.min.js"></script>
     <script src="js/app.min.js"></script>

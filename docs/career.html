@@ -47,24 +47,16 @@
                     </select>
                     <ul class="social__list social__list--menu">
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/instagram.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--instagram"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/facebook.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--facebook"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/vk.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--vk"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/twitter.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--twitter"></a>
                         </li>
                     </ul>
                 </div>
@@ -162,11 +154,16 @@
                         <button class="career-form__btn btn">Найти</button>
                     </form>
                     <div class="career-growth">
-                        <div class="career-growth__item"></div>
+                        <div class="career-growth__item">
+                            <div class="career-growth__circle"></div>
+                        </div>
                         <div class="career-growth__item">
                             <div class="career-growth__position">Дворник</div>
+                            <div class="career-growth__circle"></div>
                         </div>
-                        <div class="career-growth__item"></div>
+                        <div class="career-growth__item">
+                            <div class="career-growth__circle"></div>
+                        </div>
                     </div>
                     <div class="vacancy">
                         <div class="vacancy__wrapper">
@@ -226,6 +223,16 @@
                                         <a href="" class="vacancy__link">Продавец-консультант в магазин волос</a>
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                        <div class="vacancy__wrapper vacancy__wrapper--mobile">
+                            <div class="vacancy__inner vacancy__inner--career-growth">
+                                <ul class="vacancy__list">
+                                    <li class="vacancy__item">
+                                        <a href="" class="vacancy__link">Дворник</a>
+                                    </li>
+                                </ul>
+                                <div class="vacancy__point">Вы здесь</div>
                             </div>
                         </div>
                         <div class="vacancy__wrapper">
@@ -452,24 +459,16 @@
                     <div class="social__title">Соц. сети:</div>
                     <ul class="social__list">
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/instagram.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--instagram"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/facebook.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--facebook"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/vk.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--vk"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/twitter.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--twitter"></a>
                         </li>
                     </ul>
                 </div>
@@ -501,54 +500,97 @@
     </footer>
     <!-- End of footer -->
     <!-- Modal -->
-    <div class="modal-enter">
-        <form action="" class="modal-enter__form">
-            <div class="modal-enter__close"></div>
-            <div class="modal-enter__title">Регистрация</div>
-            <div class="modal-enter__group">
-                <label for="email" class="modal-enter__help">Почта</label>
-                <input type="email" class="modal-enter__input" id="email" placeholder="hello@jobandwork.com" required>
+    <div class="modal">
+        <form action="" class="modal__form">
+            <div class="modal__close"></div>
+            <div class="modal__title">Регистрация</div>
+            <div class="modal__group">
+                <label for="email" class="modal__help">Почта</label>
+                <input type="email" class="modal__input" id="email" placeholder="hello@jobandwork.com" required>
             </div>
-            <div class="modal-enter__group">
-                <label for="password" class="modal-enter__help">Пароль</label>
-                <input type="password" class="modal-enter__input" id="password" placeholder="******" required>
+            <div class="modal__group">
+                <label for="password" class="modal__help">Пароль</label>
+                <input type="password" class="modal__input" id="password" placeholder="******" required>
             </div>
-            <div class="modal-enter__group">
-                <label for="confirm-password" class="modal-enter__help">Подтверждение пароля</label>
-                <input type="password" class="modal-enter__input" id="confirm-password" placeholder="******" required>
+            <div class="modal__group">
+                <label for="confirm-password" class="modal__help">Подтверждение пароля</label>
+                <input type="password" class="modal__input" id="confirm-password" placeholder="******" required>
             </div>
-            <div class="modal-enter__social">
-                <div class="modal-enter__sub">через соц.сети:</div>
-                <ul class="social__list">
+            <div class="modal__social">
+                <div class="modal__head">через соц.сети:</div>
+                <ul class="social__list social__list--modal">
                     <li class="social__item">
-                        <a href="" class="social__link">
-                            <img src="img/dist/instagram.svg" alt="">
-                        </a>
+                        <a href="" class="social__link social__link--gmail-blue"></a>
                     </li>
                     <li class="social__item">
-                        <a href="" class="social__link">
-                            <img src="img/dist/facebook.svg" alt="">
-                        </a>
+                        <a href="" class="social__link social__link--facebook-blue"></a>
                     </li>
                     <li class="social__item">
-                        <a href="" class="social__link">
-                            <img src="img/dist/vk.svg" alt="">
-                        </a>
+                        <a href="" class="social__link social__link--vk-blue"></a>
                     </li>
                     <li class="social__item">
-                        <a href="" class="social__link">
-                            <img src="img/dist/twitter.svg" alt="">
-                        </a>
+                        <a href="" class="social__link social__link--mail-blue"></a>
                     </li>
                 </ul>
             </div>
-            <div class="modal-enter__bottom">
-                <button class="modal-enter__btn btn">Регистрация</button>
-                <div class="modal-enter__more">
-                    <a href="" class="modal-enter__link">У Вас уже есть аккаунт?</a>
+            <div class="modal__bottom">
+                <button class="modal__btn btn">Регистрация</button>
+                <div class="modal__more">
+                    <a href="" class="modal__link">У Вас уже есть аккаунт?</a>
                 </div>
             </div>
         </form>
+        <!--<form action="" class="modal__form">
+            <div class="modal__close"></div>
+            <div class="modal__title">Авторизация</div>
+            <div class="modal__group">
+                <label for="email" class="modal__help">Почта</label>
+                <input type="email" class="modal__input" id="email" placeholder="hello@jobandwork.com" required>
+            </div>
+            <div class="modal__group">
+                <label for="password" class="modal__help">Пароль</label>
+                <input type="password" class="modal__input" id="password" placeholder="******" required>
+            </div>
+            <div class="modal__social">
+                <div class="modal__head">через соц.сети:</div>
+                <ul class="social__list social__list--modal">
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--gmail-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--facebook-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--vk-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--mail-blue"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__btn btn">Регистрация</button>
+                <div class="modal__more">
+                    <a href="" class="modal__link">У Вас еще нет аккаунта?</a>
+                    <a href="" class="modal__link">Забыли пароль?</a>
+                </div>
+            </div>
+        </form>-->
+        <!--<form action="" class="modal__form">
+            <div class="modal__close"></div>
+            <div class="modal__title">Восстановление пароля</div>
+            <div class="modal__group">
+                <label for="email" class="modal__help">Почта</label>
+                <input type="email" class="modal__input" id="email" placeholder="hello@jobandwork.com" required>
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__btn btn">Регистрация</button>
+                <div class="modal__more">
+                    <a href="" class="modal__link">У Вас уже есть аккаунт?</a>
+                    <a href="" class="modal__link">У Вас еще нет аккаунта?</a>
+                </div>
+            </div>
+        </form>-->
     </div>
     <div class="modal-overlay"></div>
     <!-- End of modal -->

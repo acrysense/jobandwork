@@ -148,10 +148,19 @@
         &__value
             font-size: 14px
 
+@media (min-width: 992px)
+    .vacancy
+        &__wrapper--mobile
+            display: none
+
 @media (max-width: 991px)
     .information
+        &__wrapper
+            flex-wrap: wrap
         &__inner--small
             width: 100%
+    .info-news
+        margin-top: 60px
     .vacancy
         align-items: flex-start
         flex-direction: column
@@ -167,7 +176,7 @@
                 content: ''
                 position: absolute
                 top: 50%
-                left: -55.5px
+                left: -54px
                 transform: translateY(-50%)
                 z-index: 1
                 width: 31px
@@ -177,6 +186,30 @@
                 border-radius: 50%
         &__wrapper + &__wrapper
             margin-top: 60px
+        &__inner
+            height: 340px
+        &__inner--career-growth
+            height: 132px
+        &__list
+            padding: 24px 24px 0
+            max-height: 214px
+        &__point
+            position: absolute
+            right: 12px
+            bottom: 16px
+            font-size: 18px
+            line-height: 28px
+            text-align: right
+            color: $light-gray-color
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                right: -13px
+                bottom: 46px
+                width: 230px
+                height: 1px
+                background: $blue-color
     .career-growth
         display: none
 
@@ -360,6 +393,11 @@
             height: 216px
         &__img
             height: 214px
+    .info-news
+        max-width: 100%
+        &__head
+            max-width: 100%
+            max-height: 100%
     .career-form
         &__inner--flex
             flex-direction: column

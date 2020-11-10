@@ -77,7 +77,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // MODAL
     const modalBtn = document.querySelectorAll('.enter'),
+        editBtn = document.querySelectorAll('.person__edit'),
         modal = document.querySelector('.modal'),
+        modalEdit = document.querySelector('.modal--edit'),
         modalClose = document.querySelector('.modal__close'),
         modalOverlay = document.querySelector('.modal-overlay');
     
@@ -88,6 +90,18 @@ document.addEventListener("DOMContentLoaded", function () {
     
                 document.body.classList.add('scroll-disabled');
                 modal.classList.add('modal--active');
+                modalOverlay.classList.add('modal-overlay--active');
+            });
+        });
+    }
+
+    if (editBtn) {
+        editBtn.forEach(function(item){
+            item.addEventListener('click', function (event) {
+                event.preventDefault();
+    
+                document.body.classList.add('scroll-disabled');
+                modalEdit.classList.add('modal--active');
                 modalOverlay.classList.add('modal-overlay--active');
             });
         });

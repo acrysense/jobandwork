@@ -47,24 +47,16 @@
                     </select>
                     <ul class="social__list social__list--menu">
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/instagram.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--instagram"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/facebook.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--facebook"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/vk.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--vk"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/twitter.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--twitter"></a>
                         </li>
                     </ul>
                 </div>
@@ -108,200 +100,780 @@
                 <p class="section-heading__description">Советы по поиску работы и общению с работодателями. Разъяснение законодательных норм для физических и юридических лиц.</p>
             </div>
             <ul class="filter" role="tablist">
-                <li class="filter__item">Поиск работы</li>
-                <li class="filter__item active">Кадровое делопроизводство</li>
+                <li class="filter__item active">Поиск работы</li>
+                <li class="filter__item">Кадровое делопроизводство</li>
                 <li class="filter__item">Расчет зарплаты</li>
                 <li class="filter__item">Медосмотры</li>
             </ul>
-            <div class="articles">
-                <div class="articles__wrapper articles__wrapper--slider">
-                    <article class="articles__item articles__item--big">
-                        <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-01.png)"></div>
-                        <div class="articles__body">
-                            <div class="articles__title">Мы найдем вакансии за вас</div>
-                            <div class="articles__footer">
-                                <div class="articles__user">
-                                    <div class="articles__ava">
-                                        <div class="articles__img" style="background-image: url(img/dist/ava-plug.svg)"></div>
-                                    </div>
-                                    <div class="articles__info">
-                                        <div class="articles__name">Дмитрий Громов</div>
-                                        <div class="articles__date">26 января 2020</div>
-                                    </div>
-                                </div>
-                                <a href="" class="articles__more">Читать далее...</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="articles__item articles__item--big">
-                        <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-02.png)"></div>
-                        <div class="articles__body">
-                            <div class="articles__title">Проверьте страницу откликов через пару минут после публикации вакансии</div>
-                            <div class="articles__footer">
-                                <div class="articles__user">
-                                    <div class="articles__ava">
-                                        <div class="articles__img" style="background-image: url(img/dist/ava-plug.svg)"></div>
-                                    </div>
-                                    <div class="articles__info">
-                                        <div class="articles__name">Алексей Потапов</div>
-                                        <div class="articles__date">15 сентября 2019</div>
+            <div class="tabs">
+                <div class="tabs__content active">
+                    <div class="articles">
+                        <div class="articles__wrapper articles__wrapper--slider">
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Мы найдем вакансии за вас</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">26 января 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
                                     </div>
                                 </div>
-                                <a href="" class="articles__more">Читать далее...</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="articles__item articles__item--small">
-                        <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-01.png)"></div>
-                        <div class="articles__body">
-                            <div class="articles__title">Доступ к базе резюме на один день: изменения в условиях с 6 ноября</div>
-                            <div class="articles__footer">
-                                <div class="articles__user">
-                                    <div class="articles__ava">
-                                        <div class="articles__img" style="background-image: url(img/dist/ava-plug.svg)"></div>
-                                    </div>
-                                    <div class="articles__info">
-                                        <div class="articles__name">Алексей Потапов</div>
-                                        <div class="articles__date">1 марта 2020</div>
-                                    </div>
-                                </div>
-                                <a href="" class="articles__more">Читать далее...</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="articles__item articles__item--small">
-                        <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-02.png)"></div>
-                        <div class="articles__body">
-                            <div class="articles__title">Новые шаблоны писем</div>
-                            <div class="articles__footer">
-                                <div class="articles__user">
-                                    <div class="articles__ava">
-                                        <div class="articles__img" style="background-image: url(img/dist/ava-plug.svg)"></div>
-                                    </div>
-                                    <div class="articles__info">
-                                        <div class="articles__name">Дмитрий Громов</div>
-                                        <div class="articles__date">23 февраля 2020</div>
+                            </article>
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Проверьте страницу откликов через пару минут после публикации вакансии</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">15 сентября 2019</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
                                     </div>
                                 </div>
-                                <a href="" class="articles__more">Читать далее...</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="articles__item articles__item--small">
-                        <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-03.png)"></div>
-                        <div class="articles__body">
-                            <div class="articles__title">Конкуренция среди молодых специалистов выросла до 12 человек на место</div>
-                            <div class="articles__footer">
-                                <div class="articles__user">
-                                    <div class="articles__ava">
-                                        <div class="articles__img" style="background-image: url(img/dist/ava-plug.svg)"></div>
-                                    </div>
-                                    <div class="articles__info">
-                                        <div class="articles__name">Алексей Потапов</div>
-                                        <div class="articles__date">10 февраля 2020</div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Доступ к базе резюме на один день: изменения в условиях с 6 ноября</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">1 марта 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
                                     </div>
                                 </div>
-                                <a href="" class="articles__more">Читать далее...</a>
-                            </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Новые шаблоны писем</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">23 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-03.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Конкуренция среди молодых специалистов выросла до 12 человек на место</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">10 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                    </article>
+                        <div class="articles__delimiter articles__delimiter--double"></div>
+                        <div class="articles__wrapper">
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Мы найдем вакансии за вас</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">26 января 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Проверьте страницу откликов через пару минут после публикации вакансии</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">15 сентября 2019</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Доступ к базе резюме на один день: изменения в условиях с 6 ноября</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">1 марта 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Новые шаблоны писем</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">23 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-03.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Конкуренция среди молодых специалистов выросла до 12 человек на место</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">10 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <a href="" class="more more--mobile">Все статьи</a>
+                        <div class="articles__delimiter"></div>
+                        <a href="" class="more more--center">Еще статьи</a>
+                    </div>
                 </div>
-                <div class="articles__delimiter articles__delimiter--double"></div>
-                <div class="articles__wrapper">
-                    <article class="articles__item articles__item--big">
-                        <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-01.png)"></div>
-                        <div class="articles__body">
-                            <div class="articles__title">Мы найдем вакансии за вас</div>
-                            <div class="articles__footer">
-                                <div class="articles__user">
-                                    <div class="articles__ava">
-                                        <div class="articles__img" style="background-image: url(img/dist/ava-plug.svg)"></div>
-                                    </div>
-                                    <div class="articles__info">
-                                        <div class="articles__name">Дмитрий Громов</div>
-                                        <div class="articles__date">26 января 2020</div>
-                                    </div>
-                                </div>
-                                <a href="" class="articles__more">Читать далее...</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="articles__item articles__item--big">
-                        <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-02.png)"></div>
-                        <div class="articles__body">
-                            <div class="articles__title">Проверьте страницу откликов через пару минут после публикации вакансии</div>
-                            <div class="articles__footer">
-                                <div class="articles__user">
-                                    <div class="articles__ava">
-                                        <div class="articles__img" style="background-image: url(img/dist/ava-plug.svg)"></div>
-                                    </div>
-                                    <div class="articles__info">
-                                        <div class="articles__name">Алексей Потапов</div>
-                                        <div class="articles__date">15 сентября 2019</div>
+                <div class="tabs__content">
+                    <div class="articles">
+                        <div class="articles__wrapper articles__wrapper--slider">
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Мы найдем вакансии за вас</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">26 января 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
                                     </div>
                                 </div>
-                                <a href="" class="articles__more">Читать далее...</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="articles__item articles__item--small">
-                        <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-01.png)"></div>
-                        <div class="articles__body">
-                            <div class="articles__title">Доступ к базе резюме на один день: изменения в условиях с 6 ноября</div>
-                            <div class="articles__footer">
-                                <div class="articles__user">
-                                    <div class="articles__ava">
-                                        <div class="articles__img" style="background-image: url(img/dist/ava-plug.svg)"></div>
-                                    </div>
-                                    <div class="articles__info">
-                                        <div class="articles__name">Алексей Потапов</div>
-                                        <div class="articles__date">1 марта 2020</div>
-                                    </div>
-                                </div>
-                                <a href="" class="articles__more">Читать далее...</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="articles__item articles__item--small">
-                        <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-02.png)"></div>
-                        <div class="articles__body">
-                            <div class="articles__title">Новые шаблоны писем</div>
-                            <div class="articles__footer">
-                                <div class="articles__user">
-                                    <div class="articles__ava">
-                                        <div class="articles__img" style="background-image: url(img/dist/ava-plug.svg)"></div>
-                                    </div>
-                                    <div class="articles__info">
-                                        <div class="articles__name">Дмитрий Громов</div>
-                                        <div class="articles__date">23 февраля 2020</div>
+                            </article>
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Проверьте страницу откликов через пару минут после публикации вакансии</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">15 сентября 2019</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
                                     </div>
                                 </div>
-                                <a href="" class="articles__more">Читать далее...</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="articles__item articles__item--small">
-                        <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-03.png)"></div>
-                        <div class="articles__body">
-                            <div class="articles__title">Конкуренция среди молодых специалистов выросла до 12 человек на место</div>
-                            <div class="articles__footer">
-                                <div class="articles__user">
-                                    <div class="articles__ava">
-                                        <div class="articles__img" style="background-image: url(img/dist/ava-plug.svg)"></div>
-                                    </div>
-                                    <div class="articles__info">
-                                        <div class="articles__name">Алексей Потапов</div>
-                                        <div class="articles__date">10 февраля 2020</div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Доступ к базе резюме на один день: изменения в условиях с 6 ноября</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">1 марта 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
                                     </div>
                                 </div>
-                                <a href="" class="articles__more">Читать далее...</a>
-                            </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Новые шаблоны писем</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">23 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-03.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Конкуренция среди молодых специалистов выросла до 12 человек на место</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">10 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                    </article>
+                        <div class="articles__delimiter articles__delimiter--double"></div>
+                        <div class="articles__wrapper">
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Мы найдем вакансии за вас</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">26 января 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Проверьте страницу откликов через пару минут после публикации вакансии</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">15 сентября 2019</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Доступ к базе резюме на один день: изменения в условиях с 6 ноября</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">1 марта 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Новые шаблоны писем</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">23 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-03.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Конкуренция среди молодых специалистов выросла до 12 человек на место</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">10 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <a href="" class="more more--mobile">Все статьи</a>
+                        <div class="articles__delimiter"></div>
+                        <a href="" class="more more--center">Еще статьи</a>
+                    </div>
                 </div>
-                <a href="" class="more more--mobile">Все статьи</a>
-                <div class="articles__delimiter"></div>
-                <a href="" class="more more--center">Еще статьи</a>
+                <div class="tabs__content">
+                    <div class="articles">
+                        <div class="articles__wrapper articles__wrapper--slider">
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Мы найдем вакансии за вас</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">26 января 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Проверьте страницу откликов через пару минут после публикации вакансии</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">15 сентября 2019</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Доступ к базе резюме на один день: изменения в условиях с 6 ноября</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">1 марта 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Новые шаблоны писем</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">23 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-03.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Конкуренция среди молодых специалистов выросла до 12 человек на место</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">10 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="articles__delimiter articles__delimiter--double"></div>
+                        <div class="articles__wrapper">
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Мы найдем вакансии за вас</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">26 января 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Проверьте страницу откликов через пару минут после публикации вакансии</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">15 сентября 2019</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Доступ к базе резюме на один день: изменения в условиях с 6 ноября</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">1 марта 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Новые шаблоны писем</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">23 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-03.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Конкуренция среди молодых специалистов выросла до 12 человек на место</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">10 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <a href="" class="more more--mobile">Все статьи</a>
+                        <div class="articles__delimiter"></div>
+                        <a href="" class="more more--center">Еще статьи</a>
+                    </div>
+                </div>
+                <div class="tabs__content">
+                    <div class="articles">
+                        <div class="articles__wrapper articles__wrapper--slider">
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Мы найдем вакансии за вас</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">26 января 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Проверьте страницу откликов через пару минут после публикации вакансии</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">15 сентября 2019</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Доступ к базе резюме на один день: изменения в условиях с 6 ноября</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">1 марта 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Новые шаблоны писем</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">23 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-03.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Конкуренция среди молодых специалистов выросла до 12 человек на место</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">10 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="articles__delimiter articles__delimiter--double"></div>
+                        <div class="articles__wrapper">
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Мы найдем вакансии за вас</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">26 января 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--big">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/big-item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Проверьте страницу откликов через пару минут после публикации вакансии</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">15 сентября 2019</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-01.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Доступ к базе резюме на один день: изменения в условиях с 6 ноября</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">1 марта 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-02.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Новые шаблоны писем</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Дмитрий Громов</div>
+                                                <div class="articles__date">23 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="articles__item articles__item--small">
+                                <div class="articles__head" style="background-image: linear-gradient(to bottom, rgba(37,140,252,0.8), rgba(252,252,252,0.5)), url(img/dist/item-03.png)"></div>
+                                <div class="articles__body">
+                                    <div class="articles__title">Конкуренция среди молодых специалистов выросла до 12 человек на место</div>
+                                    <div class="articles__footer">
+                                        <div class="articles__user">
+                                            <div class="articles__ava">
+                                                <div class="articles__img" style="background-image: url(img/dist/big-ava.png)"></div>
+                                            </div>
+                                            <div class="articles__info">
+                                                <div class="articles__name">Алексей Потапов</div>
+                                                <div class="articles__date">10 февраля 2020</div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="articles__more">Читать далее...</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <a href="" class="more more--mobile">Все статьи</a>
+                        <div class="articles__delimiter"></div>
+                        <a href="" class="more more--center">Еще статьи</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -314,24 +886,16 @@
                     <div class="social__title">Соц. сети:</div>
                     <ul class="social__list">
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/instagram.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--instagram"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/facebook.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--facebook"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/vk.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--vk"></a>
                         </li>
                         <li class="social__item">
-                            <a href="" class="social__link">
-                                <img src="img/dist/twitter.svg" alt="">
-                            </a>
+                            <a href="" class="social__link social__link--twitter"></a>
                         </li>
                     </ul>
                 </div>
@@ -362,6 +926,101 @@
         </div>
     </footer>
     <!-- End of footer -->
+    <!-- Modal -->
+    <div class="modal">
+        <form action="" class="modal__form">
+            <div class="modal__close"></div>
+            <div class="modal__title">Регистрация</div>
+            <div class="modal__group">
+                <label for="email" class="modal__help">Почта</label>
+                <input type="email" class="modal__input" id="email" placeholder="hello@jobandwork.com" required>
+            </div>
+            <div class="modal__group">
+                <label for="password" class="modal__help">Пароль</label>
+                <input type="password" class="modal__input" id="password" placeholder="******" required>
+            </div>
+            <div class="modal__group">
+                <label for="confirm-password" class="modal__help">Подтверждение пароля</label>
+                <input type="password" class="modal__input" id="confirm-password" placeholder="******" required>
+            </div>
+            <div class="modal__social">
+                <div class="modal__head">через соц.сети:</div>
+                <ul class="social__list social__list--modal">
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--gmail-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--facebook-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--vk-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--mail-blue"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__btn btn">Регистрация</button>
+                <div class="modal__more">
+                    <a href="" class="modal__link">У Вас уже есть аккаунт?</a>
+                </div>
+            </div>
+        </form>
+        <!--<form action="" class="modal__form">
+            <div class="modal__close"></div>
+            <div class="modal__title">Авторизация</div>
+            <div class="modal__group">
+                <label for="email" class="modal__help">Почта</label>
+                <input type="email" class="modal__input" id="email" placeholder="hello@jobandwork.com" required>
+            </div>
+            <div class="modal__group">
+                <label for="password" class="modal__help">Пароль</label>
+                <input type="password" class="modal__input" id="password" placeholder="******" required>
+            </div>
+            <div class="modal__social">
+                <div class="modal__head">через соц.сети:</div>
+                <ul class="social__list social__list--modal">
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--gmail-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--facebook-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--vk-blue"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link social__link--mail-blue"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__btn btn">Регистрация</button>
+                <div class="modal__more">
+                    <a href="" class="modal__link">У Вас еще нет аккаунта?</a>
+                    <a href="" class="modal__link">Забыли пароль?</a>
+                </div>
+            </div>
+        </form>-->
+        <!--<form action="" class="modal__form">
+            <div class="modal__close"></div>
+            <div class="modal__title">Восстановление пароля</div>
+            <div class="modal__group">
+                <label for="email" class="modal__help">Почта</label>
+                <input type="email" class="modal__input" id="email" placeholder="hello@jobandwork.com" required>
+            </div>
+            <div class="modal__bottom">
+                <button class="modal__btn btn">Регистрация</button>
+                <div class="modal__more">
+                    <a href="" class="modal__link">У Вас уже есть аккаунт?</a>
+                    <a href="" class="modal__link">У Вас еще нет аккаунта?</a>
+                </div>
+            </div>
+        </form>-->
+    </div>
+    <div class="modal-overlay"></div>
+    <!-- End of modal -->
     <!-- Scripts -->
     <script src="js/vendor.min.js"></script>
     <script src="js/app.min.js"></script>
