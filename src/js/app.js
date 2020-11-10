@@ -72,6 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             item.setAttribute('checked', 'checked');
             item.parentNode.classList.add('active');
+
+            let prev = item.parentNode.parentNode;
+            prev.previousElementSibling.classList.add('active');
         })
     );
 
